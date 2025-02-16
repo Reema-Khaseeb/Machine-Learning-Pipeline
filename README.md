@@ -42,6 +42,7 @@ This project demonstrates how to manage the lifecycle of a machine learning proj
 
 ### For Adding Stages
 
+```bash
 dvc stage add -n preprocess \
     -p preprocess.input,preprocess.output \
     -d src/preprocess.py -d data/raw/data.csv \
@@ -58,3 +59,4 @@ dvc stage add -n train \
 dvc stage add -n evaluate \
     -d src/evaluate.py -d models/model.pkl -d data/raw/data.csv \
     python src/evaluate.py
+```
