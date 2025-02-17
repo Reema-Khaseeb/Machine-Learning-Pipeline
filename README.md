@@ -46,6 +46,15 @@ This project demonstrates how to build an end-to-end machine learning pipeline u
 * **MLflow**: For logging and tracking experiments, metrics, and model artifacts.
 * **Scikit-learn**: For building and training the Random Forest Classifier.
 
+## Setting Up Environment Variables
+
+Before running the pipeline, make sure to set the following environment variables in your `.env` file or your system environment:
+
+```bash
+MLFLOW_TRACKING_URI=<your_mlflow_tracking_uri>
+MLFLOW_TRACKING_USERNAME=<your_mlflow_tracking_username>
+MLFLOW_TRACKING_PASSWORD=<your_mlflow_tracking_password>
+```
 
 ## For Adding Stages
 
